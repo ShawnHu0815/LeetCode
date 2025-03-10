@@ -11,7 +11,5 @@ namespace LeetCode
             q142.Run();
         }
         
-        // 删除原来的 RunQ142 方法，因为已经移动到 Q142 类中
-        
     }
 }

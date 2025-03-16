@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using LeetCode.Properties;
 
 namespace LeetCode
@@ -15,25 +17,37 @@ namespace LeetCode
         {
             // TODO: 实现算法，计算每个查询点到相同值的最小距离
             int n = nums.Length;
+            var map = new Dictionary<int, int>();
+            for (int i = 0; i < n; i++)
+            {
+                map.Add(i,nums[i]); // 存储下标-数字对
+            }
             int m = queries.Length;
             int[] answer = new int[m];
             for (int i = 0; i < m; i++)
             {
                 int index = queries[i];
                 int num = nums[index];
-                bool isFound = false;
-                for (int j = 1; j < n; j++)
+                var keysWithSameValue = map
+                    .Where(pair => pair.Value == num)
+                    .Select(pair => pair.Key)
+                    .ToList();
+                if (keysWithSameValue.Count == 1)
                 {
-                    if (nums[(index + j) % n] == num || nums[(index - j + n) % n] == num)
-                    {
-                        isFound = true;
-                        answer[i] = j;
-                        break;
-                    }
+                    answer[i] = -1;
+                    continue;
                 }
-                if(isFound == false) answer[i] = -1;
+                
+                int min = Int32.MaxValue;
+                foreach (var sameValueIndex in keysWithSameValue)
+                {
+                    if(sameValueIndex == index )continue;
+                    int minIndex = Math.Min(Math.Abs(sameValueIndex - index), sameValueIndex + n - index);
+                    minIndex = Math.Min(index + n - sameValueIndex, minIndex);
+                    min = Math.Min(min, minIndex);
+                }
+                answer[i] = min;
             }
-            
             return answer;
         }
 
@@ -45,20 +59,24 @@ namespace LeetCode
             int[][] testNums = new int[][]
             {
                 new int[] {1, 3, 1, 4, 1, 3, 2},
-                new int[] {1, 2, 3, 4}
+                new int[] {1, 2, 3, 4},
+                new int[] {6,12,17,9,16,7,6}
+                
             };
             
             int[][] testQueries = new int[][]
             {
                 new int[] {0, 3, 5},
-                new int[] {0, 1, 2, 3}
+                new int[] {0, 1, 2, 3},
+                new int[] {5,6,0,4}
             };
             
             int[][] expectedOutputs = new int[][]
             {
                 new int[] {2, -1, 3},
-                new int[] {-1, -1, -1, -1}
-            };
+                new int[] {-1, -1, -1, -1},
+                new int[] {-1,1,1,-1}
+             };
             
             for (int i = 0; i < testNums.Length; i++)
             {

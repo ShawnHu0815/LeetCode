@@ -1,4 +1,4 @@
-﻿using LeetCode.Properties;
+using LeetCode.Properties;
 
 namespace LeetCode
 {
@@ -8,8 +8,16 @@ namespace LeetCode
        {
            // 通过注释切换要运行的题目
            
-           ILeetCodeQuestion mihoyoQ1 = new MihoyoQ1();
-           mihoyoQ1.Run();
+           // W442Q3 题目
+           ILeetCodeQuestion w442q3 = new W442Q3();
+           w442q3.Run();
+           
+           // W442Q2 题目
+           // ILeetCodeQuestion w442q2 = new W442Q2();
+           // w442q2.Run();
+           
+           // ILeetCodeQuestion mihoyoQ1 = new MihoyoQ1();
+           // mihoyoQ1.Run();
            
            // ILeetCodeQuestion q142 = new Q142();
            // q142.Run();

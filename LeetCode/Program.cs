@@ -25,11 +25,14 @@ namespace LeetCode
            // ILeetCodeQuestion mihoyoQ1 = new MihoyoQ1();
            // mihoyoQ1.Run();
            
+           ILeetCodeQuestion mihoyoQ2 = new MihoyoQ2();
+           mihoyoQ2.Run();
+           
            // ILeetCodeQuestion w153q2 = new W153Q2();
            // w153q2.Run();
            
-           ILeetCodeQuestion w443q2 = new W443Q2();
-           w443q2.Run();
+           // ILeetCodeQuestion w443q2 = new W443Q2();
+           // w443q2.Run();
        }
     }
 }

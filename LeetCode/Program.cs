@@ -7,6 +7,10 @@ namespace LeetCode
        public static void Main(string[] args)
        {
            // 通过注释切换要运行的题目
+           
+           ILeetCodeQuestion w444q2 = new W444Q2A1();
+           w444q2.Run();
+           
            // ILeetCodeQuestion q142 = new Q142();
            // q142.Run();
            
@@ -25,8 +29,8 @@ namespace LeetCode
            // ILeetCodeQuestion mihoyoQ1 = new MihoyoQ1();
            // mihoyoQ1.Run();
            
-           ILeetCodeQuestion mihoyoQ2 = new MihoyoQ2();
-           mihoyoQ2.Run();
+           // ILeetCodeQuestion mihoyoQ2 = new MihoyoQ2();
+           // mihoyoQ2.Run();
            
            // ILeetCodeQuestion w153q2 = new W153Q2();
            // w153q2.Run();

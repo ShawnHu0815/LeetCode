@@ -9,7 +9,6 @@ int main() {
     question = std::make_unique<Q1Template>();
     // 未来添加新题目时，取消注释对应的行即可
     // question = std::make_unique<Q2>();
-    // question = std::make_unique<Q3>();
     
     if (question) {
         question->run();

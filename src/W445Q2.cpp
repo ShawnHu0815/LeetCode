@@ -1,7 +1,3 @@
-//
-// Created by Shawn Hu on 2025/4/13.
-//
-
 #include "../include/ILeetCodeQuestion.h"
 #include <iostream>
 #include <string>

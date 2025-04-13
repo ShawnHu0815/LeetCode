@@ -1,5 +1,5 @@
 #include "include/ILeetCodeQuestion.h"
-#include "src/Q1Template.cpp"
+#include "src/Template.cpp"
 #include "src/LinkedListTemplate.cpp"
 #include "src/W445Q1.cpp"
 #include "src/W445Q2.cpp"

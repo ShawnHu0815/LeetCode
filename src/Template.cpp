@@ -4,7 +4,7 @@
 class Q1Template : public ILeetCodeQuestion {
 public:
     void run() override {
-        std::cout << "Running Q1Template..." << std::endl;
+        std::cout << "Running Template..." << std::endl;
         // 在这里实现具体的题目逻辑
         int result = solution();
         std::cout << "Result: " << result << std::endl;

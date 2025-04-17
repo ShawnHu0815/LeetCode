@@ -3,7 +3,9 @@
 #include "src/LinkedListTemplate.cpp"
 #include "src/W445Q1.cpp"
 #include "src/W445Q2.cpp"
+#include "src/GraphTemplate.cpp"
 #include <memory>
+using namespace std;
 
 int main() {
     std::unique_ptr<ILeetCodeQuestion> question;
@@ -12,7 +14,8 @@ int main() {
     // 未来添加新题目时，取消注释对应的行即可
 //    question = std::make_unique<Q1Template>();
 //    question = std::make_unique<LinkedListTemplate>();
-    question = std::make_unique<W445Q2>();
+//    question = std::make_unique<W445Q2>();
+    question = make_unique<GraphTemplate>();
 
     if (question) {
         question->run();

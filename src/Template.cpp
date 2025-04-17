@@ -1,7 +1,7 @@
 #include "../include/ILeetCodeQuestion.h"
 #include <iostream>
 
-class Q1Template : public ILeetCodeQuestion {
+class Template : public ILeetCodeQuestion {
 public:
     void run() override {
         std::cout << "Running Template..." << std::endl;

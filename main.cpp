@@ -5,9 +5,9 @@
 #include "src/W445Q2.cpp"
 #include "src/GraphTemplate.cpp"
 #include "src/HuffmanTemplate.cpp"
-#include "src/Q1.cpp"
-#include "src/Q4.cpp"
-#include "src/Q5.cpp"
+#include "src/WYQ1.cpp"
+#include "src/WYQ2.cpp"
+#include "src/WYQ3.cpp"
 #include <memory>
 using namespace std;
 
@@ -24,7 +24,9 @@ int main() {
 //    question = make_unique<Q1>();
 //    question = make_unique<Q4>();
 //    question = make_unique<Q5>();
-
+//    question = std::make_unique<WYQ1>();
+//    question = std::make_unique<WYQ2>();
+    question = std::make_unique<WYQ3>();
 
     if (question) {
         question->run();

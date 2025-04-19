@@ -1,13 +1,13 @@
 #include "../include/ILeetCodeQuestion.h"
 #include <iostream>
+using namespace std;
 
 class Template : public ILeetCodeQuestion {
 public:
     void run() override {
-        std::cout << "Running Template..." << std::endl;
+        cout << "开始运行模板：" << std::endl;
         // 在这里实现具体的题目逻辑
         int result = solution();
-        std::cout << "Result: " << result << std::endl;
     }
 
 private:

@@ -13,6 +13,5 @@ private:
     void solution() {
         // 题目的具体实现
 
-        return;
     }
 };

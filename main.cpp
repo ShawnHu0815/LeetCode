@@ -8,6 +8,10 @@
 #include "src/WYQ1.cpp"
 #include "src/WYQ2.cpp"
 #include "src/WYQ3.cpp"
+#include "src/SilverHeartQ1.cpp"
+#include "src/SilverHeartQ2.cpp"
+#include "src/SilverHeartQ3.cpp"
+#include "src/SilverHeartQ4.cpp"
 #include <memory>
 using namespace std;
 
@@ -26,8 +30,11 @@ int main() {
 //    question = make_unique<Q5>();
 //    question = std::make_unique<WYQ1>();
 //    question = std::make_unique<WYQ2>();
-    question = std::make_unique<WYQ3>();
-
+//    question = std::make_unique<WYQ3>();
+//    question = std::make_unique<SilverHeartQ1>();
+//    question = std::make_unique<SilverHeartQ2>();
+    question = std::make_unique<SilverHeartQ3>();
+//    question = std::make_unique<SilverHeartQ4>();
     if (question) {
         question->run();
     }

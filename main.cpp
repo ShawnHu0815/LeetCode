@@ -12,7 +12,11 @@
 #include "src/SilverHeartQ2.cpp"
 #include "src/SilverHeartQ3.cpp"
 #include "src/SilverHeartQ4.cpp"
+#include "src/W446Q3.cpp"
 #include "src/BagProblemTemplate.cpp"
+#include "src/LemonQ1.cpp"
+#include "src/LemonQ3.cpp"
+#include "src/LemonQ4.cpp"
 #include <memory>
 using namespace std;
 
@@ -36,7 +40,11 @@ int main() {
 //    question = std::make_unique<SilverHeartQ2>();
 //    question = std::make_unique<SilverHeartQ3>();
 //    question = std::make_unique<SilverHeartQ4>();
-    question = std::make_unique<BagProblemTemplate>();
+//    question = std::make_unique<BagProblemTemplate>();
+//    question = std::make_unique<W446Q3>();
+//    question = std::make_unique<LemonQ1>();
+    question = std::make_unique<LemonQ3>();
+//    question = std::make_unique<LemonQ4>();
 
     if (question) {
         question->run();

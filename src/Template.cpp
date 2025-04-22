@@ -1,5 +1,6 @@
 #include "../include/ILeetCodeQuestion.h"
 #include <iostream>
+
 using namespace std;
 
 class Template : public ILeetCodeQuestion {

@@ -7,6 +7,7 @@ class Template : public ILeetCodeQuestion {
 public:
     void run() override {
         cout << "开始运行模板：" << std::endl;
+        freopen("input.txt", "r", stdin);
         solution();
     }
 

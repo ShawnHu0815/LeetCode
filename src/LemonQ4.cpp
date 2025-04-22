@@ -11,7 +11,8 @@ using namespace std;
 class LemonQ4 : public ILeetCodeQuestion {
 public:
     void run() override {
-        cout << "开始运行模板：" << std::endl;
+        cout << "开始运行模板：" << endl;
+        freopen("input.txt", "r", stdin);
         solution();
     }
 

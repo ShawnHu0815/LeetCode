@@ -43,8 +43,8 @@ int main() {
 //    question = std::make_unique<BagProblemTemplate>();
 //    question = std::make_unique<W446Q3>();
 //    question = std::make_unique<LemonQ1>();
-    question = std::make_unique<LemonQ3>();
-//    question = std::make_unique<LemonQ4>();
+//    question = std::make_unique<LemonQ3>();
+    question = std::make_unique<LemonQ4>();
 
     if (question) {
         question->run();

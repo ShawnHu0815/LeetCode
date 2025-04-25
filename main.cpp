@@ -17,10 +17,11 @@
 #include "src/LemonQ1.cpp"
 #include "src/LemonQ3.cpp"
 #include "src/LemonQ4.cpp"
+#include "src/TwoDimentionDifference.cpp"
 #include <memory>
 using namespace std;
 
-int main() {
+signed main() {
     std::unique_ptr<ILeetCodeQuestion> question;
     
     // 通过注释来切换不同的题目
@@ -44,7 +45,8 @@ int main() {
 //    question = std::make_unique<W446Q3>();
 //    question = std::make_unique<LemonQ1>();
 //    question = std::make_unique<LemonQ3>();
-    question = std::make_unique<LemonQ4>();
+//    question = std::make_unique<LemonQ4>();
+    question = std::make_unique<TwoDimensionDifference>();
 
     if (question) {
         question->run();

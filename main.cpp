@@ -18,6 +18,7 @@
 #include "src/LemonQ3.cpp"
 #include "src/LemonQ4.cpp"
 #include "src/TwoDimentionDifference.cpp"
+#include "src/CreateBinaryTree.cpp"
 #include <memory>
 using namespace std;
 
@@ -46,8 +47,8 @@ signed main() {
 //    question = std::make_unique<LemonQ1>();
 //    question = std::make_unique<LemonQ3>();
 //    question = std::make_unique<LemonQ4>();
-    question = std::make_unique<TwoDimensionDifference>();
-
+//    question = std::make_unique<TwoDimensionDifference>();
+    question = std::make_unique<CreateBinaryTree>();
     if (question) {
         question->run();
     }

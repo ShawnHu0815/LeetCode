@@ -20,6 +20,13 @@
 #include "src/TwoDimentionDifference.cpp"
 #include "src/CreateBinaryTree.cpp"
 #include "src/MiniSpanTree.cpp"
+#include "src/BoleQ2.cpp"
+#include "src/BoleQ4.cpp"
+#include "src/LilithQ1.cpp"
+#include "src/LilithQ2.cpp"
+#include "src/LilithQ3.cpp"
+
+
 #include <memory>
 using namespace std;
 
@@ -50,7 +57,12 @@ signed main() {
 //    question = std::make_unique<LemonQ4>();
 //    question = std::make_unique<TwoDimensionDifference>();
 //    question = std::make_unique<CreateBinaryTree>();
-    question = std::make_unique<MiniSpanTree>();
+//    question = std::make_unique<MiniSpanTree>();
+//    question = std::make_unique<BoleQ2>();
+//    question = std::make_unique<BoleQ2>();
+//    question = std::make_unique<LilithQ2>();
+//    question = std::make_unique<LilithQ3>();
+    question = std::make_unique<LilithQ1>();
     if (question) {
         question->run();
     }

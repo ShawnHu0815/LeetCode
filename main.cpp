@@ -25,6 +25,7 @@
 #include "src/LilithQ1.cpp"
 #include "src/LilithQ2.cpp"
 #include "src/LilithQ3.cpp"
+#include "src/WangyiInteviewQ2.cpp"
 
 
 #include <memory>
@@ -62,7 +63,8 @@ signed main() {
 //    question = std::make_unique<BoleQ2>();
 //    question = std::make_unique<LilithQ2>();
 //    question = std::make_unique<LilithQ3>();
-    question = std::make_unique<LilithQ1>();
+//    question = std::make_unique<LilithQ1>();
+    question = std::make_unique<WangyiInteviewQ2>();
     if (question) {
         question->run();
     }

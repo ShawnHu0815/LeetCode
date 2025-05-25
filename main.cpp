@@ -3,6 +3,7 @@
 #include "src/LinkedListTemplate.cpp"
 #include "src/W445Q1.cpp"
 #include "src/W445Q2.cpp"
+#include "src/W451Q2.cpp"
 #include "src/GraphTemplate.cpp"
 #include "src/HuffmanTemplate.cpp"
 #include "src/WYQ1.cpp"
@@ -66,11 +67,9 @@ signed main() {
 //    question = std::make_unique<LilithQ3>();
 //    question = std::make_unique<LilithQ1>();
 //    question = std::make_unique<WangyiInteviewQ2>();
-    question = std::make_unique<ByteInterview>();
+//    question = std::make_unique<ByteInterview>();
+    question = std::make_unique<W451Q2>();
 
-    if (question) {
-        question->run();
-    }
-    
+    question->run();
     return 0;
 }

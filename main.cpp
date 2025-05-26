@@ -28,6 +28,7 @@
 #include "src/LilithQ3.cpp"
 #include "src/WangyiInteviewQ1.cpp"
 #include "src/WangyiInteviewQ2.cpp"
+#include "src/LeetCodeQ134.cpp"
 #include "src/ByteDanceInterview.cpp"
 
 
@@ -68,9 +69,10 @@ signed main() {
 //    question = std::make_unique<LilithQ3>();
 //    question = std::make_unique<LilithQ1>();
 //    question = std::make_unique<WangyiInteviewQ2>();
-    question = std::make_unique<WangyiInteviewQ1>();
+//    question = std::make_unique<WangyiInteviewQ1>();
 //    question = std::make_unique<ByteInterview>();
 //    question = std::make_unique<W451Q2>();
+    question = make_unique<LeetCodeQ134>();
 
     question->run();
     return 0;

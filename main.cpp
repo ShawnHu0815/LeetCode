@@ -31,7 +31,9 @@
 #include "src/LeetCodeQ134.cpp"
 #include "src/LeetCodeQ6.cpp"
 #include "src/ByteDanceInterview.cpp"
-
+#include "src/YotaQ1.cpp"
+#include "src/YotaQ2.cpp"
+#include "src/YotaQ3.cpp"
 
 #include <memory>
 using namespace std;
@@ -74,7 +76,10 @@ signed main() {
 //    question = std::make_unique<ByteInterview>();
 //    question = std::make_unique<W451Q2>();
 //    question = make_unique<LeetCodeQ134>();
-    question = make_unique<LeetCodeQ6>();
+//    question = make_unique<LeetCodeQ6>();
+//      question = make_unique<YotaQ1>();
+      question = make_unique<YotaQ2>();
+//    question = make_unique<YotaQ3>();
 
     question->run();
     return 0;

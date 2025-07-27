@@ -83,8 +83,9 @@ signed main() {
 //    question = make_unique<YotaQ3>();
 //    question = make_unique<W460Q1>();
 #include "src/W460Q3.cpp"
-    question = make_unique<W460Q3>();
-
+//    question = make_unique<W460Q3>();
+#include "src/DiandianQ2.cpp"
+    question = make_unique<DiandianQ2>();
     question->run();
     return 0;
 }

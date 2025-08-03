@@ -89,7 +89,11 @@ signed main() {
 #include "src/FengkuangQ1.cpp"
 //    question = make_unique<FengkuangQ1>();
 #include "src/FengkuangQ2.cpp";
-    question = make_unique<FengkuangQ2>();
+//    question = make_unique<FengkuangQ2>();
+#include "src/BairimengQ1.cpp";
+//    question = make_unique<BairimengQ1>();
+#include "src/BairimengQ2.cpp";
+    question = make_unique<BairimengQ2>();
 
     question->run();
     return 0;

@@ -94,7 +94,9 @@ signed main() {
 //    question = make_unique<BairimengQ1>();
 #include "src/BairimengQ2.cpp";
 #include "src/W462Q3.cpp";
-    question = make_unique<W462Q3>();
+//    question = make_unique<W462Q3>();
+#incluede "src/Q.cpp"
+    question = makr_unique<Q>();
 
     question->run();
     return 0;
